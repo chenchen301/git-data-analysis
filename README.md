@@ -4,7 +4,7 @@
 
 本项目以凝血因子 XI（Factor XI，FXI）为主题，使用 Python、Pandas、Matplotlib 和 Jupyter Notebook 对整理后的教学数据进行简单分析。
 
-项目主要介绍 FXI 的结构、凝血功能、FXI 缺乏以及相关研究方向，并通过统计图展示不同主题资料的数量。
+项目介绍 FXI 的基本结构、凝血功能、FXI 缺乏以及相关研究方向，并通过统计图展示不同主题资料的数量。
 
 > 注意：项目中的 data.csv 是为了完成数据分析作业而整理的教学数据，不代表真实患者数据，也不能用于临床诊断。
 
@@ -65,11 +65,11 @@ jupyter notebook
 
 ## 8. 科学背景
 
-FXI 是血浆中的凝血因子，以同源二聚体形式存在。每个亚基包含四个 apple domains 和一个催化结构域。FXI 被激活后形成 FXIa，可激活凝血因子 IX，从而参与凝血过程。
+FXI 是血浆中的凝血因子，以同源二聚体形式存在。人类经典 FXI 蛋白由 625 个氨基酸组成，每个亚基包含四个 Apple 结构域和一个丝氨酸蛋白酶结构域。FXI 被激活后形成 FXIa，可激活凝血因子 IX，从而参与凝血过程。citeturn0search0turn1search1
 
-FXI 缺乏通常被称为血友病 C。已有研究指出，FXI 缺乏患者的出血表现存在较大差异，单纯根据 FXI 水平并不能完全预测出血情况。
+FXI 缺乏是一种罕见的出血性疾病，历史上也称为“血友病 C”或 Rosenthal 综合征。其出血表现具有较大个体差异，常在创伤或手术后出现；aPTT 可延长，但 aPTT 或 FXI 水平与实际出血表现并不总是高度一致。citeturn0search2turn0search5
 
-FXI 也是近年来抗血栓研究关注的靶点之一。研究人员希望进一步理解 FXI 在血栓形成和正常止血之间的作用。
+FXI 也是抗血栓研究关注的靶点之一。相关研究正在探索抑制 FXI/FXIa 是否能够影响血栓形成，同时尽量减少对正常止血的影响。citeturn0search7
 
 ## 9. 可复现性
 
@@ -79,7 +79,7 @@ FXI 也是近年来抗血栓研究关注的靶点之一。研究人员希望进�
 
 ## 10. Git 版本管理
 
-本项目使用 Git 管理代码版本。
+本项目使用 Git 管理代码。
 
 示例命令：
 
@@ -90,16 +90,22 @@ git commit -m "Initial FXI analysis project"
 git tag -a v1.0.0 -m "FXI analysis version 1.0.0"
 ```
 
+标签：
+
+```text
+v1.0.0
+```
+
 ## 11. 项目结论
 
 通过本项目可以看到，FXI 相关资料可以按照结构、功能、疾病和研究方向进行整理。数据分析部分虽然比较简单，但能够完整展示 CSV 数据读取、分组统计、可视化和 Jupyter 展示的基本流程。
 
 ## 12. 参考资料
 
-1. NCBI Gene: F11 coagulation factor XI。
-2. Biology of factor XI, Research and Practice in Thrombosis and Haemostasis, 2024。
-3. Structure and function of factor XI。
-4. Why Factor XI Deficiency is a Clinical Concern。
+1. NCBI Gene: F11 coagulation factor XI。citeturn0search0
+2. UniProt: Coagulation factor XI, P03951。citeturn1search1
+3. The hemostatic role of factor XI。citeturn0search2
+4. Laboratory and Molecular Diagnosis of Factor XI Deficiency。citeturn0search5
 
 ## 13. 许可证
 
