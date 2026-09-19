@@ -1,11 +1,16 @@
-﻿姓名,数学,英语,Python,平均分
-张三,88,92,95,91.7
-李四,76,85,82,81.0
-王五,93,89,96,92.7
-赵六,68,74,79,73.7
-钱七,85,90,88,87.7
-孙八,91,78,94,87.7
-周九,79,83,86,82.7
-吴十,95,96,98,96.3
-郑一,72,80,75,75.7
-陈二,87,88,91,88.7
+topic,indicator,value,unit,interpretation
+Structure,Protein mass,160,kDa,FXI circulates as a homodimer
+Structure,Subunits,2,count,Each subunit is identical
+Structure,Subunit length,607,amino_acids,Each subunit contains 607 amino acids
+Structure,Apple domains,4,count,Each subunit contains four apple domains
+Function,Activation target,FIX,,FXIa activates factor IX
+Function,Pathway,intrinsic,,FXI participates in the intrinsic pathway
+Function,Activator,FXIIa,,FXIIa can activate FXI
+Function,Feedback activator,Thrombin,,Thrombin can also activate FXI
+Disease,Deficiency name,Hemophilia C,,FXI deficiency is also called hemophilia C
+Disease,aPTT tendency,Prolonged,,FXI deficiency commonly prolongs aPTT
+Disease,Bleeding severity,Mild,,Bleeding is often milder than hemophilia A or B
+Disease,Bleeding pattern,Variable,,Bleeding risk varies between individuals
+Research,Main research interest,Thrombosis,,FXI is studied as a possible antithrombotic target
+Research,Main safety question,Bleeding,,FXI inhibition is studied with bleeding risk in mind
+Research,Current direction,FXI inhibitors,,Multiple approaches target FXI or FXIa
