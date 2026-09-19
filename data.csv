@@ -1,16 +1,17 @@
 topic,indicator,value,unit,interpretation
-Structure,Protein mass,160,kDa,FXI circulates as a homodimer
-Structure,Subunits,2,count,Each subunit is identical
-Structure,Subunit length,607,amino_acids,Each subunit contains 607 amino acids
-Structure,Apple domains,4,count,Each subunit contains four apple domains
-Function,Activation target,FIX,,FXIa activates factor IX
-Function,Pathway,intrinsic,,FXI participates in the intrinsic pathway
-Function,Activator,FXIIa,,FXIIa can activate FXI
+Structure,Canonical protein length,625,amino_acids,Human canonical FXI protein
+Structure,Apple domains,4,count,Each FXI subunit contains four Apple domains
+Structure,Protease domain,1,count,Each subunit has a serine protease domain
+Structure,Plasma form,Homodimer,,FXI circulates as a homodimer
+Function,Activation product,FXIa,,Activated FXI is called FXIa
+Function,Main substrate,FIX,,FXIa activates factor IX
+Function,Pathway,Intrinsic,,FXI participates in the intrinsic pathway
+Function,Activator,FXIIa,,Factor XIIa can activate FXI
 Function,Feedback activator,Thrombin,,Thrombin can also activate FXI
-Disease,Deficiency name,Hemophilia C,,FXI deficiency is also called hemophilia C
+Disease,Historical name,Hemophilia C,,Historical term for FXI deficiency
+Disease,Alternative name,Rosenthal syndrome,,Another name for FXI deficiency
 Disease,aPTT tendency,Prolonged,,FXI deficiency commonly prolongs aPTT
-Disease,Bleeding severity,Mild,,Bleeding is often milder than hemophilia A or B
-Disease,Bleeding pattern,Variable,,Bleeding risk varies between individuals
-Research,Main research interest,Thrombosis,,FXI is studied as a possible antithrombotic target
+Disease,Bleeding pattern,Variable,,Bleeding tendency varies between individuals
+Research,Main research interest,Thrombosis,,FXI is studied as an antithrombotic target
 Research,Main safety question,Bleeding,,FXI inhibition is studied with bleeding risk in mind
-Research,Current direction,FXI inhibitors,,Multiple approaches target FXI or FXIa
+Research,Current direction,FXI inhibitors,,Research includes FXI and FXIa inhibitors
