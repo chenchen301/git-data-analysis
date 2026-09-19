@@ -1,107 +1,106 @@
-# Git 数据分析项目：学生成绩分析
+# FXI（凝血因子XI）数据分析项目
 
-这是一个用于演示 Git、Jupyter Notebook 和可复现数据分析流程的示例项目。
+## 1. 项目简介
 
-## 项目目标
+本项目以凝血因子 XI（Factor XI，FXI）为主题，使用 Python、Pandas、Matplotlib 和 Jupyter Notebook 对整理后的教学数据进行简单分析。
 
+项目主要介绍 FXI 的结构、凝血功能、FXI 缺乏以及相关研究方向，并通过统计图展示不同主题资料的数量。
+
+> 注意：项目中的 data.csv 是为了完成数据分析作业而整理的教学数据，不代表真实患者数据，也不能用于临床诊断。
+
+## 2. 学习目标
+
+- 了解 FXI 的基本生物学信息。
+- 学习使用 Pandas 读取 CSV 数据。
+- 学习进行简单的数据分组和统计。
+- 使用 Matplotlib 绘制柱状图。
+- 使用 Jupyter Notebook 展示分析过程。
 - 使用 Git 进行版本管理。
-- 使用 Jupyter Notebook 展示分析过程和结果。
-- 使用 Python 对学生成绩数据进行统计分析。
-- 生成可保存、可复现的分析结果和图表。
 
-## 项目结构
+## 3. 项目结构
 
 ```text
-git-data-analysis/
+fxi-analysis/
 ├── README.md
-├── requirements.txt
-├── data.csv
-├── analysis.py
 ├── analysis.ipynb
-├── .gitignore
-└── output/
+├── analysis.py
+├── data.csv
+├── requirements.txt
+└── .gitignore
 ```
 
-## 环境要求
+## 4. 环境安装
 
 建议使用 Python 3.10 或更高版本。
-
-## 安装依赖
-
-```bash
-python -m venv .venv
-```
-
-Windows：
-
-```bash
-.venv\\Scripts\\activate
-```
-
-macOS/Linux：
-
-```bash
-source .venv/bin/activate
-```
-
-安装依赖：
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 运行 Python 分析
+## 5. 运行 Python 程序
+
+在项目目录中运行：
 
 ```bash
 python analysis.py
 ```
 
-脚本会生成：
+程序会读取 data.csv，并在 output 文件夹生成统计结果和图片。
 
-- `output/result.csv`
-- `output/subject_means.png`
-- `output/score_distribution.png`
+## 6. 使用 Jupyter Notebook
 
-## 运行 Jupyter Notebook
+运行：
 
 ```bash
 jupyter notebook
 ```
 
-打开 `analysis.ipynb`，依次运行所有单元格即可看到数据表、统计结果和图表。
+打开 `analysis.ipynb`，依次运行代码单元即可看到数据表、统计结果和柱状图。
 
-## 可复现性
+## 7. 数据内容
 
-数据文件固定为项目中的 `data.csv`，分析逻辑固定在 `analysis.py` 和 `analysis.ipynb` 中，依赖版本范围记录在 `requirements.txt` 中。因此其他用户克隆仓库后，可以按照上述步骤重新运行分析。
+数据按照 Structure、Function、Disease 和 Research 四个主题进行整理。
 
-## Git 版本管理
+其中包含 FXI 的蛋白结构、激活方式、在凝血过程中的作用、FXI 缺乏以及 FXI 抑制研究等信息。
 
-本项目包含 Git 提交历史，并创建了发布标签：
+## 8. 科学背景
+
+FXI 是血浆中的凝血因子，以同源二聚体形式存在。每个亚基包含四个 apple domains 和一个催化结构域。FXI 被激活后形成 FXIa，可激活凝血因子 IX，从而参与凝血过程。
+
+FXI 缺乏通常被称为血友病 C。已有研究指出，FXI 缺乏患者的出血表现存在较大差异，单纯根据 FXI 水平并不能完全预测出血情况。
+
+FXI 也是近年来抗血栓研究关注的靶点之一。研究人员希望进一步理解 FXI 在血栓形成和正常止血之间的作用。
+
+## 9. 可复现性
+
+项目不依赖网络数据。运行项目时，只需要安装 requirements.txt 中列出的 Python 包，并使用项目自带的 data.csv。
+
+因此其他用户可以下载项目后重新运行 Python 文件或 Jupyter Notebook，得到相同的分析流程和图表。
+
+## 10. Git 版本管理
+
+本项目使用 Git 管理代码版本。
+
+示例命令：
 
 ```bash
-git log --oneline
-git tag
+git init
+git add .
+git commit -m "Initial FXI analysis project"
+git tag -a v1.0.0 -m "FXI analysis version 1.0.0"
 ```
 
-标签：
+## 11. 项目结论
 
-```text
-v1.0.0
-```
+通过本项目可以看到，FXI 相关资料可以按照结构、功能、疾病和研究方向进行整理。数据分析部分虽然比较简单，但能够完整展示 CSV 数据读取、分组统计、可视化和 Jupyter 展示的基本流程。
 
-## 项目结果
+## 12. 参考资料
 
-Notebook 会展示：
+1. NCBI Gene: F11 coagulation factor XI。
+2. Biology of factor XI, Research and Practice in Thrombosis and Haemostasis, 2024。
+3. Structure and function of factor XI。
+4. Why Factor XI Deficiency is a Clinical Concern。
 
-1. 原始成绩数据。
-2. 每名学生的总分和平均分。
-3. 各科平均分、最高分和最低分。
-4. 班级整体平均分。
-5. 平均分最高的学生。
-6. 成绩等级人数统计。
-7. 各科平均成绩柱状图。
-8. 学生平均分分布图。
+## 13. 许可证
 
-## License
-
-仅用于课程学习和 Git/Jupyter 实践。
+本项目仅用于学习和课程作业，不用于医学诊断或临床决策。
